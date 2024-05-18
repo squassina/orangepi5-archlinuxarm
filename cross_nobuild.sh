@@ -440,7 +440,7 @@ set_parts() {
     spart_label='gpt'
     spart_firstlba='34'
     spart_idbloader='start=64, size=960, type=8DA63339-0007-60C0-C436-083AC8230908, name="idbloader"'
-    spart_uboot='start=1024, size=4096, type=8DA63339-0007-60C0-C436-083AC8230908, name="uboot"'
+    spart_uboot='start=1024, size=2048, type=8DA63339-0007-60C0-C436-083AC8230908, name="uboot"'
     spart_size_all=40
     spart_off_boot=4
     spart_size_boot=512
