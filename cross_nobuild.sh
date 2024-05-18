@@ -440,10 +440,10 @@ set_parts() {
     spart_label='gpt'
     spart_firstlba='34'
     spart_idbloader='start=64, size=960, type=8DA63339-0007-60C0-C436-083AC8230908, name="idbloader"'
-    spart_uboot='start=1024, size=6144, type=8DA63339-0007-60C0-C436-083AC8230908, name="uboot"'
+    spart_uboot='start=1024, size=4096, type=8DA63339-0007-60C0-C436-083AC8230908, name="uboot"'
     spart_size_all=40
     spart_off_boot=4
-    spart_size_boot=1024
+    spart_size_boot=512
     local skt_off_boot=$(( ${spart_off_boot} * 2048 ))
     local skt_size_boot=$(( ${spart_size_boot} * 2048 ))
     spart_boot='start='"${skt_off_boot}"', size='"${skt_size_boot}"', type=C12A7328-F81F-11D2-BA4B-00A0C93EC93B, name="alarmboot"'
